@@ -60,18 +60,6 @@ require("formatter").setup({
 				}
 			end,
 		},
-		sql = {
-			function()
-				return {
-					exe = "sql-formatter",
-					args = {
-						'--config {"language": "transactsql", "keywordCase": "upper", "functionCase": "upper", "linesBetweenQueries": 1 }',
-					},
-					stdin = true,
-				}
-			end,
-		},
-
 		-- Use the special "*" filetype for defining formatter configurations on
 		-- any filetype
 		["*"] = {
