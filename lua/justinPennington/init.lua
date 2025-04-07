@@ -19,3 +19,6 @@ autocmd('LspAttach', {
         vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end, opts)
     end
 })
+
+vim.cmd "set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:·"
+vim.cmd "set list"
