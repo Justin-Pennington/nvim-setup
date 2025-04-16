@@ -22,3 +22,7 @@ autocmd('LspAttach', {
 
 vim.cmd "set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:·"
 vim.cmd "set list"
+vim.lsp.enable('eslint')
+--vim.lsp.enable('csharp_ls')
+vim.lsp.enable('omnisharp')
+vim.lsp.enable('lua_ls')
