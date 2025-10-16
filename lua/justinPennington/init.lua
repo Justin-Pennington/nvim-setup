@@ -22,3 +22,4 @@ autocmd('LspAttach', {
 
 vim.cmd "set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:·"
 vim.cmd "set list"
+
