@@ -1,4 +1,4 @@
 return {
-    'mhartington/formatter.nvim',
-    lazy = false
+	"mhartington/formatter.nvim",
+	lazy = false,
 }

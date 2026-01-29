@@ -1,8 +1,8 @@
 local M = {
-    "nvim-treesitter/nvim-treesitter",
-    lazy = false,
-    build = ':TSUpdate',
-    branch = 'main'
+	"nvim-treesitter/nvim-treesitter",
+	lazy = false,
+	build = ":TSUpdate",
+	branch = "main",
 }
 
 return { M }
