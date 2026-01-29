@@ -38,26 +38,11 @@ require("formatter").setup {
       end
     },
     typescript = {
-        require("formatter.defaults").prettierd;
-        function()
-            return {
-                exe = "prettierd",
-                args = { util.escape_path(util.get_current_buffer_file_path()) },
-                stdin = true,
-            }
-        end
+        util.withl(require("formatter.defaults").prettier, 'typescript');
     },
     javascript = {
-        require("formatter.defaults").prettierd;
-        function()
-            return {
-                exe = "prettierd",
-                args = { util.escape_path(util.get_current_buffer_file_path()) },
-                stdin = true,
-            }
-        end
+        util.copyf(require("formatter.defaults").prettier);
     },
-
     -- Use the special "*" filetype for defining formatter configurations on
     -- any filetype
     ["*"] = {
